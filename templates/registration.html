@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="https://i.pinimg.com/736x/8c/cf/03/8ccf036952e804db5e2362a73aca9d00.jpg" alt="CS2 Logo">
-            </div>
+            <div class="logo">Gallery</div>
             <nav>
                 <ul>
-                    <li><a href="/images/index.html">Главная</a></li>
-                    <li><a href="/images/upload.html">Загрузка картинок</a></li>
-                    <li><a href="/login_and_registration/login.html">Войти</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Войти</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <p>Зарегестрироваться</p>
+    <main>
+        <div class="form-container">
+            <h2 style="margin-bottom:20px; color:#fff;">Регистрация</h2>
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" placeholder="Придумайте логин">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" placeholder="Придумайте пароль">
+            </div>
+            <div class="form-group">
+                <label>Роль</label>
+                <select>
+                    <option value="user">Пользователь</option>
+                    <option value="admin">Администратор</option>
+                </select>
+            </div>
+            <button class="btn">Зарегистрироваться</button>
+            <div class="form-link">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>© 2026 CS2 FAN PORTAL • Counter-Strike 2 • Non-official community page</p>
-        <p style="margin-top: 6px; font-size: 0.7rem;">Вся информация о составе Team Spirit CS2 актуальна на сезон 2026 - 2027</p>
+        <p>© 2025 Gallery</p>
     </footer>
-
 </body>
 </html>
