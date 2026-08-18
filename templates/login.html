@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Войти</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="https://i.pinimg.com/736x/8c/cf/03/8ccf036952e804db5e2362a73aca9d00.jpg" alt="CS2 Logo">
-            </div>
+            <div class="logo">Gallery</div>
             <nav>
                 <ul>
                     <li><a href="/templates/index.html">Главная</a></li>
-                    <li><a href="/templates/upload.html">Загрузка картинок</a></li>
                     <li><a href="/templates/registration.html">Регистрация</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <p>Войти</p>
+    <main>
+        <div class="form-container">
+            <h2 style="margin-bottom:20px; color:#fff;">Логин</h2>
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" placeholder="Введите логин">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" placeholder="Введите пароль">
+            </div>
+            <button class="btn">Войти</button>
+            <div class="form-link">
+                Нет аккауната? <a href="registration.html">Зарегестрироваться</a>
+            </div>
+        </div>
+
+    </main>
 
     <footer>
-        <p>© 2026 CS2 FAN PORTAL • Counter-Strike 2 • Non-official community page</p>
-        <p style="margin-top: 6px; font-size: 0.7rem;">Вся информация о составе Team Spirit CS2 актуальна на сезон 2026 - 2027</p>
+        <p>© 2026 Gallery</p>
     </footer>
 </body>
 </html>
