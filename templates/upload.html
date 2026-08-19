@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Загрузка</title>
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="../static/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -12,31 +11,34 @@
             <div class="logo">Gallery</div>
             <nav>
                 <ul>
-                    <li><a href="/templates/index.html">Главная</a></li>
-                    <li><a href="/templates/login.html">Войти</a></li>
-                    <li><a href="/templates/registration.html">Регистрация</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="form-container">
-            <h2 style="margin-bottom:20px; color:#fff;">Загрузить картинку</h2>
-            <div class="form-group">
-                <label>Название</label>
-                <input type="text" placeholder="Введите название">
-            </div>
-            <div class="form-group">
-                <label>Файл</label>
-                <input type="file">
-            </div>
-            <button class="btn">Загрузить</button>
+
+    <form id="upload-form">
+        <div class="form-group">
+            <label>Название</label>
+            <input type="text" id="upload-title" placeholder="Введите название">
         </div>
+        <div class="form-group">
+            <label>Файл</label>
+            <input type="file" id="upload-file">
+        </div>
+        <button type="submit" class="btn">Загрузить</button>
+    </form>
+    
     </main>
 
     <footer>
         <p>© 2025 Gallery</p>
     </footer>
+
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

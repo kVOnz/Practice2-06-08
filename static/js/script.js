@@ -179,13 +179,13 @@ if (document.querySelector('.search button')) {
 }
 
 if (document.getElementById('reg-username')) {
-    document.querySelector('.form-container form').addEventListener('submit', registerUser);
+    document.getElementById('reg-form').addEventListener('submit', registerUser);
 }
 
 if (document.getElementById('login-username')) {
-    document.querySelector('.form-container form').addEventListener('submit', loginUser);
+    document.getElementById('login-form').addEventListener('submit', loginUser);
 }
 
 if (document.getElementById('upload-file')) {
-    document.querySelector('.form-container form').addEventListener('submit', uploadImage);
+    document.getElementById('upload-form').addEventListener('submit', uploadImage);
 }

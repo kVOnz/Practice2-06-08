@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Вход</title>
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="../static/js/script.js"></script>
 </head>
 <body>
 
@@ -13,34 +12,33 @@
             <div class="logo">Gallery</div>
             <nav>
                 <ul>
-                    <li><a href="/templates/index.html">Главная</a></li>
-                    <li><a href="/templates/registration.html">Регистрация</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="form-container">
-            <h2 style="margin-bottom:20px; color:#fff;">Логин</h2>
-            <div class="form-group">
-                <label>Логин</label>
-                <input type="text" placeholder="Введите логин">
-            </div>
-            <div class="form-group">
-                <label>Пароль</label>
-                <input type="password" placeholder="Введите пароль">
-            </div>
-            <button class="btn">Войти</button>
-            <div class="form-link">
-                Нет аккауната? <a href="registration.html">Зарегестрироваться</a>
-            </div>
+        
+    <form id="login-form">
+        <div class="form-group">
+            <label>Логин</label>
+            <input type="text" id="login-username" placeholder="Введите логин" required>
         </div>
+        <div class="form-group">
+            <label>Пароль</label>
+            <input type="password" id="login-password" placeholder="Введите пароль" required>
+        </div>
+        <button type="submit" class="btn">Войти</button>
+    </form>
 
     </main>
 
     <footer>
         <p>© 2026 Gallery</p>
     </footer>
+
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

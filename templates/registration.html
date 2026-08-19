@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Регистрация</title>
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="../static/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -20,32 +19,31 @@
     </header>
 
     <main>
-        <div class="form-container">
-            <h2 style="margin-bottom:20px; color:#fff;">Регистрация</h2>
-            <div class="form-group">
-                <label>Логин</label>
-                <input type="text" placeholder="Придумайте логин">
-            </div>
-            <div class="form-group">
-                <label>Пароль</label>
-                <input type="password" placeholder="Придумайте пароль">
-            </div>
-            <div class="form-group">
-                <label>Роль</label>
-                <select>
-                    <option value="user">Пользователь</option>
-                    <option value="admin">Администратор</option>
-                </select>
-            </div>
-            <button class="btn">Зарегистрироваться</button>
-            <div class="form-link">
-                Уже есть аккаунт? <a href="login.html">Войти</a>
-            </div>
+        
+    <form id="reg-form">
+        <div class="form-group">
+            <label>Логин</label>
+            <input type="text" id="reg-username" placeholder="Придумайте логин" required>
         </div>
+        <div class="form-group">
+            <label>Пароль</label>
+            <input type="password" id="reg-password" placeholder="Придумайте пароль" required>
+        </div>
+        <div class="form-group">
+            <label>Роль</label>
+            <select id="reg-role">
+                <option value="user">Пользователь</option>
+                <option value="admin">Администратор</option>
+            </select>
+        </div>
+        <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
     </main>
 
     <footer>
         <p>© 2026 Gallery</p>
     </footer>
+
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
