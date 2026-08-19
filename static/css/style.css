@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #3a3a3a;
+    padding: 15px 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Контент */
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Поиск */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: #6b6b6b;
+}
+
+.search button {
+    padding: 12px 25px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search button:hover {
+    background-color: #4a4a4a;
+}
+
+/* Галерея */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #6b6b6b;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.card-user {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+/* Формы */
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #6b6b6b;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #4a4a4a;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #8a8a8a;
+}
+
+.form-link a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    color: #ffffff;
+}
+
+/* Подвал */
+footer {
+    background-color: #1e1e1e;
+    border-top: 1px solid #3a3a3a;
+    padding: 20px;
+    text-align: center;
+    color: #8a8a8a;
+    font-size: 14px;
+}
